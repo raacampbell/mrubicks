@@ -1,0 +1,73 @@
+function PLL_opposites
+
+clf
+
+%set color definitions
+[y,o,g,b,r]=rubiks.colorDefs;
+
+%build yellow face
+faces={y,y,y;...
+	   y,y,y;...
+	   y,y,y};
+
+
+
+
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% Case Ra
+sides={...
+	   {r,b,r};...
+	   {b,r,o};...
+	   {g,o,b};...
+   	   {o,g,g}...
+   	   };
+
+rubiks.drawFaceAndSides(faces,sides);
+rubiks.drawArrows([2,6; 7,9],1)
+print('-depsc','PLL/PLL_Ra.eps')
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% Case Rb
+sides={...
+	   {g,o,b};...
+	   {o,r,g};...
+	   {r,g,r};...
+   	   {b,b,o}...
+   	   };
+
+rubiks.drawFaceAndSides(faces,sides);
+rubiks.drawArrows([1,3; 6,8],1)
+print('-depsc','PLL/PLL_Rb.eps')
+
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% Case Ja
+sides={...
+	   {r,b,b};...
+   	   {o,r,r};...
+	   {b,o,o};...
+	   {g,g,g}...
+   	   };
+
+rubiks.drawFaceAndSides(faces,sides);
+rubiks.drawArrows([3,9; 2,6],1)
+print('-depsc','PLL/PLL_Ja.eps')
+
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% Case Jb
+sides={...
+	   {o,o,g};...
+	   {r,r,o};...
+	   {g,g,r};...
+   	   {b,b,b}...
+   	   };
+
+rubiks.drawFaceAndSides(faces,sides);
+rubiks.drawArrows([3,9; 6,8],1)
+print('-depsc','PLL/PLL_Jb.eps')
+
