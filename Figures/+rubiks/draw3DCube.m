@@ -13,7 +13,7 @@ function varargout=draw3DCube(faces)
 
 
 if nargin<1
- faces=solvedCube;
+ faces=rubiks.solvedCube;
 end
 
 
