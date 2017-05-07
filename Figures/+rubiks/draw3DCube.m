@@ -9,6 +9,9 @@ function varargout=draw3DCube(faces)
 % This is the same as:
 % rubiks.draw3DCube(solvedCube)
 % 
+%
+% To draw a gray cube with coloured centres:
+% rubiks.draw3DCube(rubiks.centresOnly)
 
 
 
