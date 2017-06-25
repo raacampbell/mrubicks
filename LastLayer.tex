@@ -91,61 +91,41 @@
 \section{Breaking down the Fridrich method}
 
 The Fridrich method, also known as CFOP\footnote{\textbf{C}ross, \textbf{F}irst two layers
-\textbf{O}rient last layer, \textbf{P}ermute last layer}, is a popular collection of 
-algorithms used in speed cubing. Whilst not commonly considered a beginner's method,
-CFOP can become so if approached correctly. The purpose of this guide is to get you using
-CFOP early on in your cubing adventures. To use this guide, however, you will need to be 
-able to solve the first two layers intuitively. If you cannot yet do this, I suggest you 
-work through the following steps: 1) Learn to solve the white (for now) cross on the bottom; 
-2) Learn to solve the corners of the first layer on the bottom; 3) Learn to intuitively solve 
-the first two layers. 
-There are good Youtube videos out there to help you achieve those three steps. I like the Paradox Cubing videos (e.g. \texttt{https://www.youtube.com/watch?v=IT5BPHEZGJE}), but others will also work.
+\textbf{O}rient last layer, \textbf{P}ermute last layer}, is a popular collection of algorithms used in speed cubing. 
+To use this guide you will need to be able to solve the first two layers (ideally intuitively). If you cannot yet do this, I suggest you 
+work through the cross and first two layers using CubeSkills (\texttt{https://www.cubeskills.com/categories/3x3}) and Caleb Miller's tutorials (\texttt{https://www.youtube.com/channel/UCX1-Czp856EUko8Iu5cd9NQ}).
 
-After the first two layers, you are faced with learning quite a few algorithms if you want to 
-solve the cube using CFOP. Completing the cube is done in two stages: \textbf{o}rienting the cubies on the 
-\textbf{l}ast \textbf{l}ayer (OLL) so that all their yellow faces point up towards you, then 
-\textbf{p}ermuting the cubies of the \textbf{l}ast \textbf{l}ayer until
-they are in the correct positions (PLL). Ideally, this is done in two steps with one algorithm used for
-each step. The tricky thing is that there are 57 algorithms for OLL and 21 
-for PLL. However you do not need to learn all these algorithms in order to solve the cube with 
-CFOP. 
-
-There is the well-known trick of breaking down OLL into two steps: so-called `two look OLL.' 
-This reduces the algorithm count to 9 or 10 for this step (Figs.~\ref{OLL1} \& \ref{OLL2}). 
-In addition, you can solve the cube with only 2 PLL algorithms: permuting three edges clockwise and permuting three corners clockwise. 
+After the first two layers, you are faced with completing the last layer, which is done in two stages: \textbf{o}rienting the cubies on the 
+\textbf{l}ast \textbf{l}ayer (OLL) so that all their yellow faces point up towards you, then \textbf{p}ermuting the cubies of the \textbf{l}ast \textbf{l}ayer until they are in the correct positions (PLL). 
+Ideally, this is done in two steps with one algorithm used for each step. 
+The tricky thing is that there are 57 algorithms for OLL and 21 for PLL. 
+Luckily, you can take a shortcut when starting out. 
+So-called `two look OLL.' reduces the OLL algorithm count to 9 or 10 (Figs.~\ref{OLL1} \& \ref{OLL2}). 
+Further, you can get by with only 2 PLL algorithms: permuting three edges clockwise and permuting three corners clockwise. 
 Of course you'll be much slower this way, since you'll need to execute these algorithms several times. 
-However, you will have a solved cube and this is a major confidence boost when you're starting out. 
-Every PLL algorithm you add from this point will only serve to make you faster. Furthermore, many of 
-the algorithms you will need to learn are closely inter-related. For instance, the anti-clockwise versions 
-of the corner and edge permutations are simply the clockwise versions run backwards. The purpose
-of this guide to help you navigate the algorithm maze.
+Every PLL algorithm you add from this point will only serve to make you faster. 
+Adding algorithms to your repertoire becomes increasingly easier as the algorithms share common motifs. 
 
-\subsection{This guide}
-This guide presents my favourite algorithms for two-look OLL and PLL. The algorithm choices are 
-biased because I solve one handed (left hand). There are minor changes to the conventional 
-notation which I made in order to improve readability. The notation is described graphically 
-in Section~\ref{sec:notation}. 
-
-In the algorithms I have added spaces to aid visual `chunking' (readability). This is similar
-to the use of brackets and/or colours which other guides use. I prefer to avoid using multiple 
-colours in algorithms as I find it distracting. Similarly, over-use of brackets clutters 
-algorithms and reduces readability. I have used brackets in rare cases where one or more motifs
-repeat themselves in the same algorithm. 
+This guide presents my favourite algorithms for two-look OLL and PLL.
+There are minor changes to the conventional notation which I made in order to improve readability. 
+The notation is described graphically in Section~\ref{sec:notation}. 
+In the algorithms I have added spaces to aid visual `chunking' (readability). 
 
 
 \clearpage
 \subsection{Orienting the last layer}
-\label(OLL)
-Tables~\ref{OLL1} and \ref{OLL2} show the algorithms required for two-look OLL. In these tables, 
-and others in this guide, the caption at the top summarises the goal the of the moves or provides 
-useful information. 
+
+Tables~\ref{OLL1} and \ref{OLL2} show the algorithms required for two-look OLL. 
+See Section~\ref{sec:notation} if you're unfamiliar with the notation. 
+In these tables, and others in this guide, the caption at the top summarises the goal the of the moves or provides useful information. 
 
 
 \begin{table}[ht]
   \centering
-  \caption{\textit{OLL, first look.} The goal here is to make a yellow cross.
-  If you don't wish to learn the algorithm for case C, just execute A followed by B. $p$
-  is the probability of finding the cube in the configuration shown.}
+  \caption{\textit{OLL, first look.} The goal of this step is to make a yellow cross (Case D).
+  If you don't wish to learn the algorithm for Case C, just execute A followed by B. 
+  If you're just starting out, you could even learn Case A only, since executing the algorithm for Case A on Case B will take you to Case A that you can solve. 
+  $p$ is the probability of finding the cube in the configuration shown.}
   \renewcommand{\arraystretch}{1.5}% Spread rows out...
   \begin{tabular}{>{\centering}m{1.2in} >{}m{1.8in} >{\centering}m{1.2in} >{}m{1.8in}}
     \toprule
@@ -175,9 +155,16 @@ useful information.
 \begin{table}[ht]
   \centering
 
-  \caption{\textit{OLL, second look.} From a solved state (Case H), executing the algorithm for 
-  case Case A takes you to case Case B and vice versa (A$\longleftrightarrow$B). Similarly,
-  E$\longleftrightarrow$F. Executing Case G takes you to Case F. The algorithms for Cases C and D 
+  \caption{\textit{OLL, second look.}
+  The goal of this step is to orient all the corner cubies to produce a yellow face (Case H).
+  Note that the algorithms for Case A and B are the same but inverted. 
+  Cases E and F have very similar algorithms. 
+  You can get by with a subset of these algorithms at first.
+  When you're starting out I suggest first learning these in the order A, C, D, then E. 
+  This is because it's possible to solve Case B by repeating the algorithm for A and the same for cases F and E. 
+  If you get Case G, just execute algorithm A and it should take you to Case C. 
+  Also note that from  the solved state (Case H), executing the algorithm for case Case A takes you to case Case B and vice versa (A$\longleftrightarrow$B). 
+  Similarly, E$\longleftrightarrow$F. Executing Case G takes you to Case F. The algorithms for Cases C and D 
   rotate the corner pieces, so executing one of these algorithms twice from a solved 
   face returns the cube to a solved face. This stuff is worth knowing because it provides
   a means for practice.}
@@ -207,6 +194,7 @@ useful information.
 
     \includegraphics[width=\faceWidth]{OLL_2_7.eps}  & Case G. \p{4}{27}\nl\nl 
     {\A R\2D \.{R}U\2 R\.{D} \.{R}U\2\.{R} }  \nl
+    or \nl
     {\A RU\.{R}U R U\2R\2 \.{U}R\.{U}\.{R} U\2R} &
 
     \includegraphics[width=\faceWidth]{OLL_2_8.eps}  & Case H. \p{1}{27}\nl\nl 
@@ -222,7 +210,9 @@ useful information.
 \clearpage
 
 \section{PLL: the least you need}
-The tables below describe the complete PLL procedure. The edge colors are purely illustrative; 
+The tables below describe the complete PLL procedure. 
+The purpose of these is to permute the last layer without changing the orientation of the pieces (so the remain yellow on top).
+The edge colors are purely illustrative; 
 in other words, if you have 
 Case Ua (Table~\ref{PLL_edges}) it will manifest with a solved blue side only one quarter of the 
 time. It could also be a solved red, green, or orange side. 
@@ -277,8 +267,7 @@ and add more PLL algorithms in time.
   \caption{\textit{PLL: corner permutations.} Case E is long but repetitive, 
   so not too hard to learn. Since Aa and Ab are inverses of each other, so it's
   easy to learn both. However, since they both just cycle corners in different directions
-  you can get away with just Aa or Ab initially if that's what you wish. Overall, learning
-  all three corner permutation algorithms is fairly easy.}
+  you can get away with just Aa or Ab initially if that's what you wish.}
   \renewcommand{\arraystretch}{1.5}% Spread rows out...
   \begin{tabular}{>{\centering}m{1.2in} >{}m{1.8in} >{\centering}m{1.2in} >{}m{1.8in}}
     \toprule
@@ -317,7 +306,6 @@ and add more PLL algorithms in time.
     \midrule
 
     \includegraphics[width=\faceWidth]{PLL_F.eps}  & Case F. \p{1}{18}\nl\nl 
-    {\A \.{R}U\2\.{R}\.{d} \.{R}\.{F} R\2\.{U}\.{R}U \.{R}FR\.UF} \nl
     {\A \U \.{R}\.{U}\.{F} RU\.{R}\.{U} \.{R}FR\2\.{U} \.{R}\.{U}RU \.{R}UR} &
 
     \includegraphics[width=\faceWidth]{PLL_T.eps}  & Case T. \p{1}{18}\nl\nl 
@@ -359,9 +347,8 @@ and add more PLL algorithms in time.
 
 \begin{table}[ht]
   \centering
-  \caption{\textit{PLL: swap diagonal corners and an edge pair.} Note that in Nb a
-  portion of the algorithm in square brackets is repeated twice (this is what $\cdot2$ means). These algorithms are also inverses
-  of each other since the two cases are mirror images. Follow the F2L pairs in Y.}
+  \caption{\textit{PLL: swap diagonal corners and an edge pair.} 
+  Learn to follow the F2L pairs in Y: helps with learning it.}
   \renewcommand{\arraystretch}{1.5}% Spread rows out...
   \begin{tabular}{>{\centering}m{1.2in} >{}m{1.8in} >{\centering}m{1.2in} >{}m{1.8in}}
     \toprule
@@ -369,17 +356,18 @@ and add more PLL algorithms in time.
     \midrule
 
     \includegraphics[width=\faceWidth]{PLL_Na.eps}  & Case Na. \p{1}{72}\nl\nl 
-    {\A RU\.{R} URU  \.{R}\.{F}R  U  \.{R}\.{U}\.{R}  FR\2 \.{U}\.{R} U2 R\.{U}\.{R}} &
+    {\A RU\.{R}U RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\2\.{U} \.{R}U\2 R\.{U}\.{R}} &
 
 
-    \includegraphics[width=\faceWidth]{PLL_Nb.eps}  & Case Nb. \p{1}{72}\nl\nl 
-    {\A  [\.{R}U \.{L}U\2 R\.{U} L]$\cdot2$ U } \\
+    \includegraphics[width=\faceWidth]{PLL_Nb.eps}  & Case Nb. \p{1}{72}\nl\nl
+    {\A \.{R}UR\.{U} \.{R}\.{F}\.{U}F RU\.{R}F \.{R}\.{F} R\.{U}R} \\
+
 
     \includegraphics[width=\faceWidth]{PLL_V.eps}  & Case V. \p{1}{18}\nl\nl 
     {\A \.{R}U\.{R}\.{d} \.{R}\.{F} R\2\.{U}\.{R}U \.{R}FRF} & 
 
     \includegraphics[width=\faceWidth]{PLL_Y.eps}  & Case Y. \p{1}{18}\nl\nl 
-    {\A F R\.{U}\.{R} \.{U} RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\.{F}} \\
+    {\A F R\.{U}\.{R}\.{U} RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\.{F}} \\
 
     \bottomrule
   \end{tabular}
@@ -391,7 +379,8 @@ and add more PLL algorithms in time.
 \begin{table}[ht]
   \centering
   \caption{\textit{PLL: double rotations.} These moves permute both the corners and the edges.
-  Running Ga on a solved cube gives you Gb. Similarly Gc and Gd share the same relationship. }
+  Running Ga on a solved cube gives you Gb. Similarly Gc and Gd share the same relationship. 
+  Learn these algorithms last.}
   \renewcommand{\arraystretch}{1.5}% Spread rows out...
   \begin{tabular}{>{\centering}m{1.2in} >{}m{1.8in} >{\centering}m{1.2in} >{}m{1.8in}}
     \toprule
@@ -431,7 +420,7 @@ Figure~\ref{fig:faceNotation} shows the notation used to the layers
 being manipulated. For example, {\A L} refers to the left face. 
 Specifically, in the algorithms above, {\A L} indicates a \textit{clockwise} 
 rotation of the left face.  {\A \.{L}} indicates an \textit{anti-clockwise}\footnote{This is obviously
-the same as {\A L'}. You can still call it `L-prime' verbally, if you like. The overlying dot just doesn't add the horizontal space taken up by the prime symbol.}
+the same as {\A L'}, which is the traditional notation. You can still call it `L-prime' verbally, if you like. The overlying dot just doesn't add the horizontal space taken up by the prime symbol.}
 rotation of the left face. For every face, the terms `clockwise'  and `anti-clockwise' 
 refer to how the face would appear to rotate if it were facing you. Thus, if you're holding the 
 cube with the red face towards you, an {\A R} move will send
@@ -606,7 +595,6 @@ is \Rp. The font in this figure differs slightly from the text, but the point ho
     {\A Solved} \\
 
     \includegraphics[width=\faceWidth]{PLL_F.eps}  & F. \p{1}{18}\nl 
-    {\A \.{R}U\2\.{R}\.{d} \.{R}\.{F} R\2\.{U}\.{R}U \.{R}FR\.UF} \nl
     {\A \U \.{R}\.{U}\.{F} RU\.{R}\.{U} \.{R}FR\2\.{U} \.{R}\.{U}RU \.{R}UR} &
 
     \includegraphics[width=\faceWidth]{PLL_T.eps}  & T. \p{1}{18}\nl 
@@ -626,16 +614,17 @@ is \Rp. The font in this figure differs slightly from the text, but the point ho
     {\A  RU\.{R}\.{F} RU\.{R}\.{U} \.{R}F R\2\.{U}\.{R} \.{U} } \\
 
     \includegraphics[width=\faceWidth]{PLL_Na.eps}  & Na. \p{1}{72}\nl 
-    {\A RU\.{R} URU  \.{R}\.{F}R  U  \.{R}\.{U}\.{R}  FR\2 \.{U}\.{R} U2 R\.{U}\.{R}} &
+    {\A RU\.{R}U RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\2\.{U} \.{R}U\2 R\.{U}\.{R}} &
 
-    \includegraphics[width=\faceWidth]{PLL_Nb.eps}  & Nb. \p{1}{72}\nl\nl 
-    {\A  [\.{R}U \.{L}U\2 R\.{U} L]$\cdot2$ U } \\
+
+    \includegraphics[width=\faceWidth]{PLL_Nb.eps}  & Case Nb. \p{1}{72}\nl\nl
+    {\A \.{R}UR\.{U} \.{R}\.{F}\.{U}F RU\.{R}F \.{R}\.{F} R\.{U}R} \\
 
     \includegraphics[width=\faceWidth]{PLL_V.eps}  & V. \p{1}{18}\nl 
     {\A \.{R}U\.{R}\.{d} \.{R}\.{F} R\2\.{U}\.{R}U \.{R}FRF} & 
 
     \includegraphics[width=\faceWidth]{PLL_Y.eps}  & Y. \p{1}{18}\nl 
-    {\A F R\.{U}\.{R} \.{U} RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\.{F}} \\
+    {\A F R\.{U}\.{R}\.{U} RU\.{R}\.{F} RU\.{R}\.{U} \.{R}FR\.{F}} \\
 
     \includegraphics[width=\faceWidth]{PLL_Ga.eps}  & Ga. \p{1}{18}\nl 
     {\A R\2u \.{R}U\.{R}\.{U} R\.{u} R\2 \Up \.{R}UR } & 
